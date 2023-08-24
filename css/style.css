@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    background-color: #454444;
+    background-image: url("/images/bienve.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.titulo {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(255, 210, 128);
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 700px;
+    margin: 15px;
+    color: azure;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 100px;
+    justify-content: last baseline;
+    margin: 30px;
+    color: azure;
+    
+}
+
+.button {
+    width: 300px;
+    margin: 10px;
+    padding: 7px;
+    background-color: #bbd0d8;
+    color: #ffffff;
+    border-radius: 15px;
+    border-color: #fff;
+    border: 2px solid white;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    display: flex;
+    justify-content: center;
+}
+
+/*.button:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+}*/
+
+#contenido>.titulo>h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+#contenido {
+    background-color: #454444;
+    width: 100%;
+    height: auto;   
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    padding: 30px;
+    max-width: 800px;
+    border: 3px solid #f2f3f5;
+    border-radius: 5px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+
+.row>img {
+    width: 100px;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer>div>a {
+    margin: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+p{ 
+    color: white;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+  }
